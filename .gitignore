@@ -1,16 +1,25 @@
-# Compiled class file
+# =========================================================
+# Global ignore: ignore everything
+# =========================================================
+*
+
+# =========================================================
+# Allow only project directories (frontend and backend)
+# =========================================================
+!guestbook-frontend/
+!guestbook-service/
+
+# Allow contents inside them
+!guestbook-frontend/**
+!guestbook-service/**
+
+# =========================================================
+# Java and build artifacts
+# =========================================================
 *.class
-
-# Log file
 *.log
-
-# BlueJ files
 *.ctxt
-
-# Mobile Tools for Java (J2ME)
 .mtj.tmp/
-
-# Package Files #
 *.jar
 *.war
 *.nar
@@ -18,7 +27,31 @@
 *.zip
 *.tar.gz
 *.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# =========================================================
+# Explicitly ignore system, shell, tool, and config files
+# from your home directory listing
+# =========================================================
+.bash_history
+.bash_logout
+.bashrc
+.cache/
+.codeoss/
+.config/
+.docker/
+.gemini/
+.git/        # repo-level .git will still be recognized; this just prevents subdirs
+.gitconfig
+.local/
+.m2/
+.mysql_history
+.npm/
+.profile
+.sudo_as_admin_successful
+.vscode/
+README-cloudshell.txt
+training-data-analyst/
+spring-cloud-gcp-guestbook
+
