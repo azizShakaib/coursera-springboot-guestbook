@@ -42,7 +42,7 @@ replay_pid*
 .config/
 .docker/
 .gemini/
-.git/        # repo-level .git will still be recognized; this just prevents subdirs
+.git/
 .gitconfig
 .local/
 .m2/
